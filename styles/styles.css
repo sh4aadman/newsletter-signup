@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  background-color: hsl(235, 18%, 26%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2em;
+}
+
+#heading {
+  color: hsl(234, 29%, 20%);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+#signup-form-details {
+  padding: 1.25em;
+}
+
+#signup-form-details p {
+  color: hsl(234, 29%, 20%);
+  font-size: 1em;
+  line-height: 150%;
+  margin-bottom: 1em;
+}
+
+#signup-form-details ol {
+  list-style: none;
+  list-style-position: inside;
+  margin-bottom: 2em;
+}
+
+#signup-form-details li {
+  color: hsl(234, 29%, 20%);
+  font-size: 1em;
+  line-height: 150%;
+  display: flex;
+  gap: 0.8em;
+}
+
+#signup-form > h5 {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-bottom: 0.8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#error-message {
+    color: hsl(356, 99%, 68%);
+    display: none;
+}
+
+#signup-form > input {
+  padding: 1em;
+  border: 1px solid hsl(0, 0%, 58%);
+  border-radius: 0.5em;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 1.5em;
+}
+
+#signup-form > input::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: hsl(0, 0%, 58%);
+}
+
+#signup-form > input:active {
+  border: 1px solid hsl(234, 29%, 20%);
+}
+
+#signup-form > button {
+  display: block;
+}
+
+#subscription-button {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.8em;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  padding: 1em 2.5em;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+#subscription-button:hover {
+  background: linear-gradient(
+    to right,
+    hsl(356, 99%, 68%),
+    60%,
+    hsl(13, 99%, 62%)
+  );
+}
+
+#successful-message {
+  display: none;
+}
