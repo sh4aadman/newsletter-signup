@@ -8,6 +8,10 @@ form?.addEventListener("submit", function (event) {
   event.preventDefault();
   const email = document.getElementById("email-input").value;
 
+  if (!email) {
+    errorMessage.innerHTML = "Email is required!"
+  }
+
   if (regex.test(email)) {
     document.getElementById("email-input").value = "";
 
